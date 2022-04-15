@@ -1,67 +1,32 @@
-<!-- HTML for JS+DOM -->
-<!-- I am just coping what he has in video (section 12, slide 2)
-so i can mess around with it and test DOM manipulation. -->
+<!-- HTML for Background Generator -->
+
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>JavaScript + DOM</title>
+	<title>Gradient Background</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
-<body>
+<body id="gradient" style="">
+	<h1>Background generator</h1>
+	<input class="color1" type="color" name="Color 1" value="#427BFF">
+	<input class="color2" type="color" name="Color 2" value="#6CF9B0">
+	<h2>Current CSS Background</h2>
+	<h3 class="h3One"></h3>
+	<div id="container">
+		<h3 class="underline">Color 1 Hex Code</h3>
+		<h3 class="h3Two">Color 1 Hex Code</h3>
+		<h3 class="underline">Color 2 Hex Code</h3>
+		<h3 class="h3Three">Color 2 Hex Code</h3>
+	</div>
 	<br>
-	<h1 class="coolTitle">Party Shopping List</h1>
-	<br>
-	<p id="first">Get it done today!!</p>
-	<label for="SList">Add items to shopping list!</label>
-	<input id="userinput" type="text" placeholder="Enter Items">
-	<button id="enter">Enter</button>
-	<ul id="uList">
-		<!-- <div class="container"> -->
-<!-- 			<div class="wrap 0" random="0">
-				<li class="listItem 0">Notebook</li>
-				<button class="delete 0" type="text">Delete</button>
-			</div>
-			<div class="wrap 1">
-				<li class="listItem">Jello</li>
-				<button class="delete" type="text">Delete</button>
-			</div> -->
-<!-- 			<div class="wrap 2">
-				<li class="listItem">Spinach</li>
-				<button class="delete" type="text">Delete</button>
-			</div>
-			<div class="wrap 3">
-				<li class="listItem">Rice</li>
-				<button class="delete" type="text">Delete</button>
-			</div>
-			<div class="wrap 4">
-				<li class="listItem">Birthday Cake</li>
-				<button class="delete" type="text">Delete</button>
-			</div>
-			<div class="wrap 5">
-				<li class="listItem">Candles</li>
-				<button class="delete" type="text">Delete</button>
-			</div> -->
-		<!-- </div> -->	
-	</ul>
-		
-
-	
-
-	
-
-	<p id="emoji" style="font-size:2.5em;">
-	&#128516;
-	&#128512;
-	&#128525;
-	&#128151;
-	</p>
-
-
-
-<script type="text/javascript" src="./script.js"></script>
+	<h4>Click Me to change text!!</h4>
+	<button id="random">Random Colors</button>
+	<h5 id="one">Random Color 1</h5>
+	<h5 id="two">Random Color 2</h5>
+	<script type="text/javascript" src="./script.js"></script>
 
 </body>
 </html>

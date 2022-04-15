@@ -1,67 +1,57 @@
-/*CSS for JS+DOM*/
-/*I am just copying what he has in video (section 12, slide 2)
-so i can mess around with it and test DOM manipulation.*/
+/*CSS for Background Generator*/
+
+html{
+	height: 100%;
+}
 
 
-.coolTitle {
+body{
+	font: "Raleway", sans-serif;
+	color: rgba(0, 0, 0, .5);
 	text-align: center;
-	font-family: 'Oswald' , Helvetica, sans-serif;
-	font-size: 40px;
-	transform: skewY(-10deg);
-	letter-spacing: 4px;
-	word-spacing: -8px;
-	color:  tomato;
-	text-shadow: 
-		-1px -1px 0 firebrick,
-		-2px -2px 0 firebrick,
-		-3px -3px 0 firebrick,
-		-4px -4px 0 firebrick,
-		-5px -5px 0 firebrick,
-		-6px -6px 0 firebrick,
-		-7px -7px 0 firebrick,
-		-8px -8px 0 firebrick,
-		-30px 20px 40px dimgrey;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	top: 15%;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	background: linear-gradient(to right, rgb(6,182,227), rgb(7,8,176));
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-.done{
-	text-decoration:  line-through;
+h1{
+	font: 600 3.5em "Raleway", sans-serif;
+	color: rgba(0, 0, 0, .5);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	width: 100%;
+	border: solid black .02em;
 }
 
-/*.notDone{
-	text-decoration: none;
-}
-*/
-.title{
-	background-color: blueviolet;
-}
-
-#first {
-	color: darkblue;
-	text-decoration: underline;
-	font-weight: bolder;
-	font-size: 1.5em;
+.h3One{
+	font: 900 1em "Raleway", sans-serif;
+	color: rgba(0, 0, 0, .5);
+	text-align: center;
+	text-transform: none;
+	letter-spacing: .01em;
+	border: solid black .02em;
+	width: 100%;
 }
 
-.wrap{
-	display: flex;
-	/*align-content: center;*/
-	align-items: center;
-/*	border: solid black 2px;*/
-	margin: .3em;
+h5{
+	text-transform: none;
 }
 
-.delete{
-	margin: .5em;
-	
-}
-
-.listItem{
-	margin: 2px;
+#container{
+	display: inline-block;
 	border: solid black 2px;
-	padding: 2px;
-
+	margin: 0;
+	font-size: .8em;
 }
 
-.container{
-	border: solid red 4px;
+.underline{
+	text-decoration: underline;
 }
